@@ -1,4 +1,4 @@
-# Development Log
+# 對話輸入紀錄 (Development Log)
 
 ## 階段一：API 測試與資料抓取 (HW2-1)
 *   **目標**: 測試 CWA API 的連線與 JSON 資料獲取。
