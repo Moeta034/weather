@@ -2,7 +2,9 @@ import streamlit as st
 import sqlite3
 import pandas as pd
 import folium
+import os
 from streamlit_folium import st_folium
+from init_db import init_db
 
 # 座標對應 (大致中心點)
 REGION_COORDS = {
@@ -29,7 +31,17 @@ def main():
     st.set_page_config(page_title="HW2 氣溫預報 Web App", layout="wide")
     st.title("氣溫預報 Web App (使用 CWA API)")
     
-    # 初始化資料庫中的所有地區
+    # 若資料庫不存在，自動從 CWA API 獲取資料並建立資料庫
+    if not os.path.exists('data.db'):
+        with st.spinner("首次啟動，正在從 CWA API 獲取資料..."):
+            init_db()
+    
+    # 提供手動重新抓取按鈕
+    if st.sidebar.button("🔄 重新抓取最新資料"):
+        init_db()
+        st.rerun()
+    
+    # 載入資料庫中的所有地區資料
     all_data = load_data()
     if all_data.empty:
         st.error("資料庫中沒有資料，請先執行 init_db.py")
