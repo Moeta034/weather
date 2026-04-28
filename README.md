@@ -62,17 +62,6 @@ python -m streamlit run app.py
 
 ---
 
-## Streamlit Cloud 部署（Live Demo）
-
-1. 前往 [share.streamlit.io](https://share.streamlit.io) 並以 GitHub 帳號登入
-2. 點「New app」，填入：
-   - **Repository**: `Moeta034/weather`
-   - **Branch**: `main`
-   - **Main file path**: `app.py`
-3. 點「Deploy!」即可，首次啟動會自動建立資料庫
-
----
-
 ## 使用的技術
 
 - **API**: [CWA 氣象資料開放平台](https://opendata.cwa.gov.tw)（資料集：F-A0010-001）
