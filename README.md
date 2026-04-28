@@ -58,6 +58,7 @@ python -m streamlit run app.py
 ```
 
 開啟瀏覽器前往：**http://localhost:8501**
+或查看線上 Demo：[Streamlit Cloud 連結](https://weather-unbfmmyjszbvdw7ufeo3ja.streamlit.app/)
 
 > **備註**：若 `data.db` 不存在，App 啟動時會自動呼叫 `init_db()` 建立資料庫。
 > 側邊欄也有 **🔄 重新抓取最新資料** 按鈕可手動更新。
