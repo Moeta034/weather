@@ -1,5 +1,7 @@
 # HW2 氣溫預報 Web App
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://weather-unbfmmyjszbvdw7ufeo3ja.streamlit.app/)
+
 這是一個使用 CWA 氣象局 API 製作的氣溫預報 Web App 作業，包含資料爬取、分析、存儲與視覺化呈現。
 
 ---

@@ -22,3 +22,4 @@
     2.  左側讀取 SQLite 資料庫，實現下拉選單選地區功能，並利用 `st.line_chart` 與 `st.dataframe` 展示該區域的一週氣溫趨勢。
     3.  右側實作互動式地圖，引入 `folium` 與 `streamlit-folium`，先定義各地區大約經緯度，並根據使用者在下拉選單選擇的時間（日期），動態產生所有地區在當天的氣溫標記。並根據均溫加上不同顏色的樣式以達到「圖像化」要求。
 *   **結果**: 順利完成流暢的 Web App，完全符合 HW2 的所有作業需求。
+    *   **Live Demo**: [點此查看 (Streamlit Cloud)](https://weather-unbfmmyjszbvdw7ufeo3ja.streamlit.app/)
